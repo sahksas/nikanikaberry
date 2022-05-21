@@ -1,6 +1,6 @@
 # nikanikaberry README
 
-This is the README for your extension "nikanikaberry". After writing up a brief description, we recommend including the following sections.
+Every time you commit the code you are editing to git, it will show a major spoiler about a certain pirate battle manga.
 
 ## Features
 
