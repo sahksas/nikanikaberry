@@ -10,8 +10,8 @@ export function showSpoiler() {
   )["mtime"];
   const now = new Date();
   const diff = now.getTime() - lastCommitDateTime.getTime();
-  // 1hour
-  if (diff >= 60 * 60 * 1000) {
+  // 3hours
+  if (diff >= 3 * 60 * 60 * 1000) {
     vscode.window
       .showInformationMessage(
         spoilers[Math.floor(Math.random() * spoilers.length)],
