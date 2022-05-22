@@ -1,8 +1,8 @@
 {
   "name": "nikanikaberry",
   "displayName": "NikaNikaBerry",
-  "description": "",
-  "version": "0.0.1",
+  "description": "If you don't commit to git for a long time, it will show a serious spoiler about a certain pirate battle manga!",
+  "version": "1.0.0",
   "engines": {
     "vscode": "^1.67.0"
   },
