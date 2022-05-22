@@ -10,22 +10,10 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:nikanikaberry.start",
-    "onCommand:nikanikaberry.stop"
+    "workspaceContains:.git"
   ],
   "main": "./dist/extension.js",
-  "contributes": {
-    "commands": [
-      {
-        "command": "nikanikaberry.start",
-        "title": "Start"
-      },
-      {
-        "command": "nikanikaberry.stop",
-        "title": "Stop"
-      }
-    ]
-  },
+  "contributes": {},
   "scripts": {
     "vscode:prepublish": "npm run package",
     "compile": "webpack",
