@@ -18,8 +18,8 @@ export function showSpoiler() {
         { modal: true },
         { title: "わかった!!!", isCloseAffordance: true }
       )
-      .then((_) => utils.startTimer(60000));
+      .then((_) => utils.startTimer(constants.countMS));
   } else {
-    utils.startTimer(60000 - diff);
+    utils.startTimer(constants.countMS - diff);
   }
 }
