@@ -1,8 +1,9 @@
 {
   "name": "nikanikaberry",
   "displayName": "NikaNikaBerry",
+  "publisher": "baku",
   "description": "If you don't commit to git for a long time, it will show a serious spoiler about a certain pirate battle manga!",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "engines": {
     "vscode": "^1.67.0"
   },
@@ -41,5 +42,13 @@
     "webpack-cli": "^4.9.2",
     "@vscode/test-electron": "^2.1.3"
   },
-  "publisher": "baku"
+  "bugs": {
+    "url": "https://github.com/sahksas/nikanikaberry/issues",
+    "email": "baku@baku.world"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sahksas/nikanikaberry.git"
+  },
+  "homepage": "https://github.com/sahksas/nikanikaberry/blob/master/README.md"
 }
