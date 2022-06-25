@@ -4,7 +4,7 @@ If you don't commit to git for a long time, it will show a serious spoiler about
 
 ## Screen shot
 
-![screenshot](https://raw.githubusercontent.com/sahksas/nikanikaberry/master/pict/screenshot.png)
+![screenshot](https://raw.githubusercontent.com/sahksas/nikanikaberry/master/images/screenshot.png)
 
 ## Known Issues
 
