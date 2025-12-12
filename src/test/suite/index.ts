@@ -11,7 +11,13 @@ export async function run(): Promise<void> {
 
 	const testsRoot = path.resolve(__dirname, '..');
 
-	const files = await glob('**/**.test.js', { cwd: testsRoot });
+	let files: string[];
+	try {
+		files = await glob('**/**.test.js', { cwd: testsRoot });
+	} catch (err) {
+		console.error('Error while globbing test files:', err);
+		throw err;
+	}
 
 	// Add files to the test suite
 	files.forEach(f => mocha.addFile(path.resolve(testsRoot, f)));
