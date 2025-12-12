@@ -22,19 +22,16 @@ export async function run(): Promise<void> {
 	// Add files to the test suite
 	files.forEach(f => mocha.addFile(path.resolve(testsRoot, f)));
 
-	return new Promise((c, e) => {
-		try {
-			// Run the mocha test
-			mocha.run(failures => {
-				if (failures > 0) {
-					e(new Error(`${failures} tests failed.`));
-				} else {
-					c();
-				}
-			});
-		} catch (err) {
-			console.error(err);
-			e(err);
+	try {
+		// Run the mocha test
+		const failures = await new Promise<number>((resolve) => {
+			mocha.run(resolve);
+		});
+		if (failures > 0) {
+			throw new Error(`${failures} tests failed.`);
 		}
-	});
+	} catch (err) {
+		console.error(err);
+		throw err;
+	}
 }
